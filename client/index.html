@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    .hide {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- a paragraph of text containing this copy: "Thank you for visiting our website! To get early access to our planned projects, please fill in the following quick questionnaire."
+a textarea with the label "Describe your experience with Green Fox Academy so far"
+a number input with the label "On a scale of 1 to 10, how likely are you to recommend Green Fox Academy to a friend?"
+an email input with the label "Your email address:"
+a button -->
+
+  <p>Thank you for visiting our website! To get early access to our planned projects, please fill in the following quick questionnaire.</p>
+
+  <label for="feedback">Describe your experience with Green Fox Academy so far</label>
+  <textarea id="feedback" cols="30" rows="10"></textarea>
+
+  <label for="scale">On a scale of 1 to 10, how likely are you to recommend Green Fox Academy to a friend?</label>
+  <input id="scale" type="number">
+
+  <label for="email">Your email address:</label>
+  <input type="email" id="email">
+
+  <button></button>
+
+  <span class="loading hide">Loading</span>
+
+  <ul id="result">
+    <li></li>
+  </ul>
+
+  <script src="client.js"></script>
+</body>
+</html>
