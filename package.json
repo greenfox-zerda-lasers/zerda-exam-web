@@ -4,7 +4,7 @@
   "description": "mindegy",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js",
+    "test": "karma start",
     "kiscica": "ls",
     "start": "node index.js"
   },
@@ -24,6 +24,10 @@
     "mysql": "^2.12.0"
   },
   "devDependencies": {
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.4.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
     "tape": "^4.6.3"
   }
 }

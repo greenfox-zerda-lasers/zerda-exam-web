@@ -38,8 +38,6 @@ app.post('/exam', function(req, res){
     "status": "error",
     "message": "thank you"
   }
-  console.log(req.body);
-  console.log(req.body.feedback);
   if (validator(req.body.email, req.body.scale, req.body.feedback)) {
     con.query("SELECT * FROM projects;",function(err,rows){
       body.projects = rows.map(function(row) {
